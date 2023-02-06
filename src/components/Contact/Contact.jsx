@@ -18,7 +18,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Ecrivez votre message"
-              rows="10"
+              rows="8"
             ></textarea>
             <div className="btn-container">
               <button>Ecrivez-moi</button>
