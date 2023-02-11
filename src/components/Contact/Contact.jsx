@@ -21,7 +21,7 @@ const Contact = () => {
               rows="8"
             ></textarea>
             <div className="btn-container">
-              <button>Ecrivez-moi</button>
+              <button className="sendButton">Ecrivez-moi</button>
             </div>
           </form>
         </div>

@@ -1,16 +1,18 @@
 .sociallinks {
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: rgb(226, 32, 32);
     width: 45px ;
+    position: fixed;
+    left: 0; top: 12%;
 }
 
 .sociallinks li {
     width: 150px;
     height: 5%;
-    background-color: gray;
+    background-color: rgb(226, 32, 32);
     padding: 6px;
-    margin-left: -107px;
+    margin-left: -100px;
     margin-right: 0;
     border-radius: 3px;
 }
@@ -18,8 +20,11 @@
 .sociallinks a {
     color: white;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .sociallinks li:hover {

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import './SocialLinks.css'
@@ -10,38 +10,28 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          Instagram <FaInstagram size={40} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.instagram.com/gauthierbtrainer",
     },
     {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} />
+          Mail <HiOutlineMail size={40} />
         </>
       ),
-      href: "https://github.com/gauthierblein",
+      href: "mailto:gauthierbtrainer@gmail.com",
     },
     {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+          LinkedIn <FaLinkedin size={40} />
         </>
       ),
-      href: "mailto:bleingauthier@gmail.com",
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          CV <BsFillPersonLinesFill size={30} /> 
-        </>
-      ),
-      href: "/resume.pdf",
-      download: true,
+      href: "https://linkedin.com",
     },
   ];
 

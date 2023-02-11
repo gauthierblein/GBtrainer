@@ -9,30 +9,34 @@ const NavBar = () => {
   const links = [
     {
       id: 1,
-      link: "home",
+      link: "accueil",
     },
     {
       id: 2,
-      link: "à propos",
+      link: "me connaître",
     },
     {
       id: 3,
-      link: "portfolio",
+      link: "programmes",
     },
     {
       id: 4,
-      link: "compétences",
+      link: "personal training",
     },
     {
       id: 5,
+      link: "small group training"    
+    },
+    {
+      id: 6,
       link: "contact",
     },
   ];
 
   return (
     <div className="navbar-container">
-      <div>
-        <h1 className="navbar-logo">Gau</h1>
+      <div className="navbar-logo">
+        <span>GB</span><span className="navbar-logo-trainer">Trainer</span>
       </div>
 
       <ul className="navbar-menu">

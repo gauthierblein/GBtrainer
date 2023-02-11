@@ -1,14 +1,14 @@
 .contact {
     height: 110vh;
     width: 100%;
-    color: white;
-    background: linear-gradient(black, rgb(57, 56, 56));
+    background: white;
+    color: rgb(70, 65, 65);
 }
 
 .contact-container {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 75%;
     margin-left: auto; margin-right: auto;
 }
 
@@ -16,7 +16,7 @@
     font-size: 36px;
     font-weight: 600;
     padding-bottom: 5px;
-    border-bottom: solid gray 5px;
+    border-bottom: solid 2px rgb(226, 32, 32);
     width: fit-content;
     margin-top: 100px;
     margin-bottom: 30px;
@@ -31,12 +31,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    margin-left: auto; margin-right: auto;
+    border: 2px solid rgb(226, 32, 32);
+    border-radius: 10px;
+    background: rgb(250, 236, 236);
 }
 
 form {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
 }
 
 input, textarea {
@@ -57,17 +63,18 @@ input:hover {
     margin-top: 10px;
 }
 
-button {
+.sendButton {
     color: white;
     width: fit-content;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 8px 8px 18px;
     border-radius: 6px;
-    background: linear-gradient(to right, cyan, rgb(66, 66, 151));
+    background: linear-gradient(to right, rgb(188, 91, 91), rgb(196, 9, 9));
+    opacity: 0.92;
 }
-    button:hover {
-    transform: scale(1.1);
+    .sendButton:hover {
+    opacity: 1;
     transition: 300ms
     }
 

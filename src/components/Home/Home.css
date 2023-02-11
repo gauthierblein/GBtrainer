@@ -1,15 +1,15 @@
 .home {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(black, rgb(57, 56, 56));
-    color: white;
+    background: white;
+    color: rgb(70, 65, 65);
 }
 
 .home-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 75%;
     margin-left: auto; margin-right: auto;
     height: 100%;
 }
@@ -19,11 +19,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 50%;
+    width: 40%;
 }
 
 .heroText-container h2 {
-    color: white;
     font-size: 80px;
     font-weight: 800;
     line-height: normal;
@@ -31,26 +30,33 @@
 }
 
 .heroText-container p {
-    color: rgb(190, 190, 190);
     font-size: 22px;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
+}
+
+.btnHome-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn{
     display: flex;
     width: auto;
     cursor: pointer;
-    animation: smoothscroll1 1s;
+    margin-bottom: 15px;
 }
 
 .group {
     color: white;
-    width: auto;
+    display: flex;
+    justify-content: center;
+    width: 230px;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 8px 8px 18px;
     border-radius: 6px;
-    background: linear-gradient(to right, cyan, rgb(66, 66, 151));
+    background: linear-gradient(to right, rgb(188, 91, 91), rgb(196, 9, 9));
 }
 
 .group:hover .arrow {
@@ -65,7 +71,7 @@
 }
 
 .heroImg-container {
-    width: 40%;
+    width: 55%;
 }
 
 .heroImg-container img {

@@ -1,9 +1,10 @@
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Experience from "./components/Experience/Experience";
+import PersonalTraining from "./components/PersonalTraining/personalTraining";
 import Home from "./components/Home/Home";
 import NavBar from "./components/Navbar/NavBar";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Programmes from "./components/Programmes/Programmes";
+import SmallGroupTraining from "./components/SmallGroupTraining/smallGroupTraining";
 import SocialLinks from "./components/SocialLinks/SocialLinks";
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
       <NavBar />
       <Home />
       <About />
-      <Portfolio />
-      <Experience />
+      <Programmes />
+      <PersonalTraining />
+      <SmallGroupTraining />
       <Contact />
 
       <SocialLinks />
