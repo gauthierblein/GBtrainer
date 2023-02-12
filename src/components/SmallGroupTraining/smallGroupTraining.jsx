@@ -1,77 +1,27 @@
-import React from "react";
-
-import html from "../../assets/html.png";
-import css from "../../assets/css.png";
-import javascript from "../../assets/javascript.png";
-import reactImage from "../../assets/react.png";
-import nextjs from "../../assets/nextjs.png";
-import graphql from "../../assets/graphql.png";
-import github from "../../assets/github.png";
-import tailwind from "../../assets/tailwind.png";
+import sgtPic from '../../assets/workout-5914643__340.jpg'
 
 import './smallGroupTraining.css'
 
-const Experience = () => {
-  const techs = [
-    {
-      id: 1,
-      src: html,
-      title: "HTML",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS",
-    },
-    {
-      id: 3,
-      src: javascript,
-      title: "JavaScript",
-    },
-    {
-      id: 4,
-      src: reactImage,
-      title: "React",
-    },
-    {
-      id: 5,
-      src: tailwind,
-      title: "Tailwind",
-    },
-    {
-      id: 6,
-      src: nextjs,
-      title: "Next JS",
-    },
-    {
-      id: 7,
-      src: graphql,
-      title: "GraphQL",
-    },
-    {
-      id: 8,
-      src: github,
-      title: "GitHub",
-    },
-  ];
+const SmallGroupTraining = () => {
 
   return (
-    <div name="small group training" className="sgTraining">
-      <div className="sgTraining-container">
+    <div name="small group training" className="smallGroupTraining">
+      
         <h2>Small Group Training</h2>
-        <p>Voici les outils que j'utilise régulièrement</p>
-
-        <div className="techs-container">
-          {techs.map(({ id, src, title}) => (
-            <div key={id} className="techs">
-              <img src={src} alt=""/>
-              <p>{title}</p>
-            </div>
-          ))}
+        <p>Des résultats en groupe. Team Building. Bootcamps</p>
+      <div className="smallGroupTraining-container">
+        <div className="smallGroupTraining-img">
+          <img src={sgtPic} alt="personal training" />
         </div>
+        <div className="smallGroupTraining-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis, nulla sit voluptatibus tempora doloremque quaerat nobis, voluptatum cupiditate quidem eos quo cum rem ex est debitis, nesciunt saepe? Quidem?</p>
+        </div>
+
+
       </div>
     </div>
   );
 };
 
-export default Experience;
+export default SmallGroupTraining;
+

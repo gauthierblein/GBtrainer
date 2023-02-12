@@ -1,77 +1,26 @@
-import React from "react";
-
-import html from "../../assets/html.png";
-import css from "../../assets/css.png";
-import javascript from "../../assets/javascript.png";
-import reactImage from "../../assets/react.png";
-import nextjs from "../../assets/nextjs.png";
-import graphql from "../../assets/graphql.png";
-import github from "../../assets/github.png";
-import tailwind from "../../assets/tailwind.png";
+import ptPic from '../../assets/kettlebell-3361559_960_720.jpg'
 
 import './personalTraining.css'
 
-const Experience = () => {
-  const techs = [
-    {
-      id: 1,
-      src: html,
-      title: "HTML",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS",
-    },
-    {
-      id: 3,
-      src: javascript,
-      title: "JavaScript",
-    },
-    {
-      id: 4,
-      src: reactImage,
-      title: "React",
-    },
-    {
-      id: 5,
-      src: tailwind,
-      title: "Tailwind",
-    },
-    {
-      id: 6,
-      src: nextjs,
-      title: "Next JS",
-    },
-    {
-      id: 7,
-      src: graphql,
-      title: "GraphQL",
-    },
-    {
-      id: 8,
-      src: github,
-      title: "GitHub",
-    },
-  ];
+const PersonalTraining = () => {
 
   return (
     <div name="personal training" className="personalTraining">
-      <div className="personalTraining-container">
+      
         <h2>Personal Training</h2>
-        <p>Voici les outils que j'utilise régulièrement</p>
-
-        <div className="techs-container">
-          {techs.map(({ id, src, title}) => (
-            <div key={id} className="techs">
-              <img src={src} alt=""/>
-              <p>{title}</p>
-            </div>
-          ))}
+        <p>La meilleure solution pour un apprentissage rapide et des résultats marquants</p>
+      <div className="personalTraining-container">
+        <div className="personalTraining-img">
+          <img src={ptPic} alt="personal training" />
         </div>
+        <div className="personalTraining-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis, nulla sit voluptatibus tempora doloremque quaerat nobis, voluptatum cupiditate quidem eos quo cum rem ex est debitis, nesciunt saepe? Quidem?</p>
+        </div>
+
+
       </div>
     </div>
   );
 };
 
-export default Experience;
+export default PersonalTraining;

@@ -2,6 +2,8 @@ import React from "react";
 import HeroImage from "../../assets/heroImage2.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import swissFlag from "../../assets/Flag_of_Switzerland.png"
+import frenchFlag from "../../assets/Flag_of_France.png"
 import './Home.css'
 
 const Home = () => {
@@ -12,9 +14,19 @@ const Home = () => {
     >
       <div className="home-container">
         <div className="heroText-container">
+
           <h2>GB Trainer</h2>
-          <p>Professionnel du fitness depuis 2011.</p>
-          <p>Coaching sur Genève et ses alentours.</p>
+
+          <div className="heroDescription">
+            <div className="heroDescription-text">
+              <p>Professionnel du fitness depuis 2011</p>
+              <p>Coaching sur Genève et ses alentours</p>
+            </div>
+            <div className="heroDescription-flags">
+              <img src={frenchFlag} alt="french flag" />
+              <img src={swissFlag} alt="swiss flag" />
+            </div>
+          </div>
 
           <div className="btnHome-container">
           <div className="btn">
