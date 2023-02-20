@@ -1,8 +1,9 @@
 .programmes {
-    height: 110vh;
+    height: 120vh;
     width: 100%;
     background: white;
     color: rgb(70, 65, 65);
+    padding-top: 50px;
 }
 
 .programmes-container {
@@ -15,85 +16,81 @@
 
 .programmes-container h2 {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 700;
     padding-bottom: 5px;
     border-bottom: solid 2px rgb(226, 32, 32);
     width: fit-content;
-    margin-top: 90px;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .programmes-container p {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
-.projects-container {
+.programs-list {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.projects {
-    width: 30%;
-    margin-bottom: 20px;
+.programs-type {
+    width: 31%;
+    background-color: rgb(240, 239, 239);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    box-shadow: 5px 3px 3px rgb(82, 74, 74);
+    border: solid 3px rgb(90, 82, 82);
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 30px;
 }
-.projects img:hover {transform: scale(1.05); transition: 500ms}
 
-.btn-container {
+.programs-title {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 0;
-    padding: 5px;
+    margin-bottom: 15px;
 }
 
-.portfolio-btn {
-    color: white;
-    width: fit-content;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 6px;
-    background: linear-gradient(to right, cyan, rgb(66, 66, 151));
+.programs-type h3 {
+    color: rgb(226, 32, 32);
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: underline;
 }
-    button:hover {
-    transform: scale(1.1);
-    transition: 300ms
-    }
+
+
 
 
 /* Mobiles */
 @media screen and (max-width: 768px) {
     .programmes {
-        height: 100vh;
-        width: 100%;
+        height: auto;
+        width: 95%;
+        margin-left: auto; margin-right: auto;
     }
     .programmes-container {
-        width: 90%;
+        width: 100%;
     }
     .programmes-container h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .programmes-container p {
         font-size: 14px;
+        margin-bottom: 30px;
     }
-    .projects {
-        width: 45%;
+    .programs-list {
+        flex-direction: column;
     }
-    .btn-container {
-        gap: 1rem;
+    .programs-type {
+        width: 90%;
+        margin-left: auto; margin-right: auto;
     }
-    .portfolio-btn {
-        font-size: 14px;
-        padding: 5px;
-     }
+    .programs-type h3 {
+        font-size: 22px;
+    }
 }

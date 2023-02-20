@@ -1,9 +1,10 @@
 .smallGroupTraining {
-    height: 110vh;
+    height: 100vh;
     width: 75%;
     margin-left: auto; margin-right: auto;
     background: white;
     color: rgb(70, 65, 65);
+    padding-top: 50px;
 }
 
 .smallGroupTraining h2 {
@@ -40,15 +41,65 @@
     width: 45%;
 }
 
+.smallGroupTraining-text p {
+    font-size: 20px;
+    font-weight: 400;
+}
 
+.tarifs {
+    color:rgb(226, 32, 32);
+    font-weight: 700;
+}
 
+.smt-link {
+    font-size: 20px;
+    color:rgb(226, 32, 32);
+    cursor: pointer;
+}
+
+.smallGroupTraining-text h3 {
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.smallGroupTraining-text ul {
+    font-size: 20px;
+}
 
 
 
 
 /* Mobiles */
 @media screen and (max-width: 768px) {
+    .smallGroupTraining {
+        height: auto;
+        width: 95%;
+        margin-left: auto; margin-right: auto;
+    }
+    .smallGroupTraining h2 {
+        font-size: 28px;
+    }
     .smallGroupTraining p {
         font-size: 14px;
     }
+    .smallGroupTraining-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .smallGroupTraining-img {
+        width: 80%;
+    }
+    .smallGroupTraining-text {
+        width: 100%;
+    }
+    .smt-link {
+        font-size: 14px;
+    }
+    .smallGroupTraining-text h3, .smallGroupTraining-text ul {
+        font-size: 14px;
+    }
+
 }

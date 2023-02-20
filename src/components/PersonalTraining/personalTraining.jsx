@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import ptPic from '../../assets/kettlebell-3361559_960_720.jpg'
 
 import './personalTraining.css'
@@ -14,8 +15,21 @@ const PersonalTraining = () => {
           <img src={ptPic} alt="personal training" />
         </div>
         <div className="personalTraining-text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis, nulla sit voluptatibus tempora doloremque quaerat nobis, voluptatum cupiditate quidem eos quo cum rem ex est debitis, nesciunt saepe? Quidem?</p>
-        </div>
+            <p>Quels sont vos objectifs ? Travaillons ensembles pour définir un projet et maximiser les chances de succès.</p>
+            <br />
+            <p>Entraînements en direct, selon vos dispobilités et votre proximité géographique.</p>
+            <br />
+            <p>A partir de <span className="tarifs">CHF 70.- </span>par séance d'une heure. 
+              <Link className="pt-link" to="contact"> Planifions une séance d'essai</Link> et démarrons sans attendre.
+            </p>
+            <h3>Points forts</h3>
+            <ul>
+              <li>+ de 200 personnes déjà coachées</li>
+              <li>Matériel fourni</li>
+              <li>Conseils en nutrition inclus</li>
+              <li>Paiements possibles en CHF, Euros et crypto-monnaies</li>
+            </ul>
+          </div>
 
 
       </div>

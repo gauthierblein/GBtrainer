@@ -1,8 +1,9 @@
 .contact {
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background: white;
     color: rgb(70, 65, 65);
+    padding-top: 50px;
 }
 
 .contact-container {
@@ -24,7 +25,7 @@
 
 .contact-container p {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .input-container {
@@ -72,6 +73,7 @@ input:hover {
     border-radius: 6px;
     background: linear-gradient(to right, rgb(188, 91, 91), rgb(196, 9, 9));
     opacity: 0.92;
+    margin-bottom: 20px;
 }
     .sendButton:hover {
     opacity: 1;
@@ -82,20 +84,26 @@ input:hover {
 /* Mobiles */
 @media screen and (max-width: 768px) {
     .contact {
-        height: 100vh;
-        width: 100%;
+        height: auto;
+        width: 95%;
+        margin-left: auto; margin-right: auto;
     }
     .contact-container {
-        width: 90%;
+        width: 100%;
     }
     .contact-container h2 {
         margin-top: 80px;
+        font-size: 28px;
     }
     .contact-container p {
         font-size: 14px;
         margin-bottom: 30px;
     }
+    .input-container {
+        width: 90%;
+        margin-left: auto; margin-right: auto;
+    }
     form {
-        width: 75%;
+        width: 90%;
     }
 }
